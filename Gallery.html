@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link href="https://fonts.googleapis.com/css2?family=roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e48d166edc.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="fontawesome-free-6.3.0-web/css/all.css">
+    <link rel="stylesheet" href="Gallery.css">
+</head>
+<body>
+
+    <header>
+        <div id="navbar">   
+          <!-- navigation bar -->
+            <nav>
+              <!-- website logo -->
+              <a href="Home.html"><img src="SPORTS-XPRESS.png" alt="LOGO" class="logo"></a>
+              <ul>
+                <!-- navigation bar links -->
+                <li><a href="Home.html"><b>HOME</b></a></li>
+                <li><a href="Gallery.html" class="active"><b>GALLERY</b></a></li>
+                <li><a href="Buy.html"><b>BUY</b></a></li>
+                <li><a href="Quiz.html"><b>QUIZ</b></a></li>
+                <li><a href="SiteMap.html"><b>SITE MAP</b></a></li>
+                <li><a href="Comments.html"><b>COMMENTS</b></a></li>
+                <li><a href="AboutUs.html"><b>ABOUT US</b></a></li>
+              </ul>
+            </nav>
+        </div>
+      </header> 
+      <hr>
+      <br> 
+  
+      <div class="home01img" id="img01"></div>
+  
+          <!-- back to top button -->
+          <div class="back-to-top"><a href="#navbar"><i class="fa fa-arrow-up"></i></a></div>
+
+
+
+    <label for="colorSelect">Select a color:</label>
+	<select id="colorSelect" onchange="changeColor()">
+		<option value="white">White</option>
+		<option value="black" selected>Black</option>
+		<option value="gray">Gray</option>
+		<option value="blue">Blue</option>
+        <option value="yellow">Yellow</option>
+	</select>
+
+    <label for="font-size">Select font size:</label>
+    <select id="font-size" onchange="changeFontSize()">
+        <option value="16">16</option>
+        <option value="18">18</option>
+        <option value="20" selected>20</option>
+        <option value="22">22</option>
+        <option value="24">24</option>
+    </select>
+
+	<script>
+		function changeColor() {
+			var colorSelect = document.getElementById("colorSelect");
+			var selectedColor = colorSelect.options[colorSelect.selectedIndex].value;
+			document.body.style.backgroundColor = selectedColor;
+		}
+	</script>
+
+    <script>
+        function changeFontSize() {
+            var e = document.getElementById("font-size");
+            var selectedFontSize = e.options[e.selectedIndex].value;
+            document.body.style.fontSize = selectedFontSize + "px";
+        }      
+    </script>
+
+    <div class="containergal">
+        <div class="section-title">
+            <h1>Image Gallery</h1>
+        </div>
+
+        <div class="rowgal">
+
+            <div class="columngal">
+                <div class="effect">
+                    <div class="effect-image">
+                        <img src="Gal-Basketball.jpg" alt="Giannis Antetokounmpo" height="720" id="1img">
+                    </div>
+                    <div class="effect-text">
+                        <div class="inner">
+                            <h2>Giannis Antetokounmpo</h2>
+                            <p>Giannis Sina Ugo Antetokounmpo is a Greek-Nigerian professional basketball player for 
+                                the Milwaukee Bucks of the National Basketball Association (NBA). Antetokounmpo's country of origin, 
+                                in addition to his size, speed, strength, and ball-handling skills have earned him the nickname "Greek Freak". 
+                                Antetokounmpo is widely regarded as one of the greatest power forwards and one of the greatest European players of all time.</p>
+                            <div class="effect-btn">
+                                <a href="#image-1" class="btn"><i class="fa fa-eye"></i> View</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columngal">
+                <div class="effect">
+                    <div class="effect-image">
+                        <img src="Gal-Badminton.jpg" alt="Saina Nehwal" height="720" id="2img">
+                    </div>
+                    <div class="effect-text">
+                        <div class="inner">
+                            <h2>Saina Nehwal</h2>
+                            <p>Saina Nehwal is an Indian professional badminton player. 
+                                A former world no. 1, she has won 24 international titles, which includes ten Superseries titles. 
+                                Although she reached the world's 2nd in 2009, it was only in 2015 that she was able to attain the 
+                                world no. 1 ranking, thereby becoming the only female player from India and therafter the second Indian 
+                                player – after Prakash Padukone – to achieve this feat.She has represented India three times in the Olympics, 
+                                winning a bronze medal in her second appearance at London 2012.</p>
+                            <div class="effect-btn">
+                                <a href="#image-2" class="btn"><i class="fa fa-eye"></i> View</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columngal">
+                <div class="effect">
+                    <div class="effect-image">
+                        <img src="Gal-Cricket.jpg" alt="Sri Lankan cricket Team" height="720" id="3img">
+                    </div>
+                    <div class="effect-text">
+                        <div class="inner">
+                            <h2>Sri Lankan cricket Team</h2>
+                            <p>Cricket is the most popular sport in Sri Lanka. Sri Lanka is one of the twelve nations that 
+                                take part in Test cricket and one of the six nations that has won a cricket World Cup. Cricket 
+                                is played at professional, semi-professional and recreational levels in the country and international 
+                                cricket matches are watched with interest by a large proportion of the population.Sri Lanka (then called Ceylon) was 
+                                occupied by the British in 1796 and became a British colony in 1815. As in all places that the British arrived in large numbers, 
+                                cricket soon followed and it is reasonable to assume that the game was first played on the island by 1800. The earliest 
+                                definite mention of cricket in Ceylon was a report in the Colombo Journal on 5 September 1832 which called for the formation of a 
+                                cricket club. The Colombo Cricket Club was formed soon afterwards and matches began in November 1832. Since then, the sport has grown 
+                                domestically with major events such as the Premier Trophy and the Premier Limited Overs Tournament.</p>
+                            <div class="effect-btn">
+                                <a href="#image-3" class="btn"><i class="fa fa-eye"></i> View</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columngal">
+                <div class="effect">
+                    <div class="effect-image">
+                        <img src="Gal-Football.jpg" alt="Argentina National Football Team" height="720" id="4img">
+                    </div>
+                    <div class="effect-text">
+                        <div class="inner">
+                            <h2>Argentina National Football Team</h2>
+                            <p>The Argentina national football team represents Argentina in men's international football 
+                                and is administered by the Argentine Football Association, the governing body for football in Argentina. 
+                                Nicknamed La Albiceleste, they are the reigning world champions, having 
+                                won the most recent World Cup in 2022.</p>
+                            <div class="effect-btn">
+                                <a href="#image-4" class="btn"><i class="fa fa-eye"></i> View</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="preview-box" id="image-1">
+            <div class="content">
+            <a href="#1img" class="close"></a>
+            <img class="preview-image" src="Gal-Basketball.jpg" alt="Giannis Antetokounmpo">
+            </div>
+          </div>
+          
+          <div class="preview-box" id="image-2">
+            <div class="content">
+            <a href="#2img" class="close"></a>
+            <img class="preview-image" src="Gal-Badminton.jpg" alt="Saina Nehwal" width="600">
+            </div>
+          </div>
+  
+          <div class="preview-box" id="image-3">
+            <div class="content">
+            <a href="#3img" class="close"></a>
+            <img class="preview-image" src="Gal-Cricket.jpg" alt="Sri Lankan cricket Team">
+            </div>
+          </div>
+  
+          <div class="preview-box" id="image-4">
+            <div class="content">
+            <a href="#4img" class="close"></a>
+            <img class="preview-image" src="Gal-Football.jpg" alt="Argentina National Football Team">
+            </div>
+          </div>
+    </div>
+
+
+    <!--Footer-->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+    
+            <!--spOrts-xpress-->
+            <div class="footer-col1">
+                <h4>spOrts-xpress</h4>
+                <p class="footerSPXtext">Don't let time pass you by! It's never too late 
+                    to make a change and commit to a healthy lifestyle. 
+                    Let this new year be the catalyst for your transformation. 
+                    Embark on your journey with a manageable routine and take advantage of our 
+                    latest athletic gear arrivals with up to a whopping 50% discount. 
+                    From basic necessities to premium performance-enhancing equipment, spOrts-xpress 
+                    has everything you need to unleash your inner sportsman. 
+                    Don't wait any longer, today is the day to take that first step towards a fitter, stronger you.
+                </p>
+            </div>
+    
+            <!--Sports-->
+            <div class="footer-col">
+                <h4>SPORTS</h4>
+                <ul>
+                    <li><a href="Cricket.html">Cricket</a></li>
+                    <li><a href="Swimming.html">Swimming</a></li>
+                    <li><a href="Football.html">Football</a></li>
+                    <li><a href="Tennis.html">Tennis</a></li>
+                </ul>
+            </div>
+    
+            <!--Services-->
+            <div class="footer-col">
+                <h4>SERVICES</h4>
+                <ul>
+                    <li>Free Shipping</li>
+                    <li>Quick Delivery</li>
+                    <li>Satisfaction Guaranteed</li>
+                </ul>
+            </div>
+            
+            <!--Follow Us-->
+            <div class="footer-col">
+                <h4>FOLLOW US</h4>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com/?lang=en"><i class="fa-brands fa-square-twitter"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            </div> 
+        </div>
+    
+        <br>
+        <br>
+        <br>
+        <br>
+    
+        <div>
+            <div class="contactother">
+            <i class="fa fa-envelope"></i>
+            <a href="https://mail.google.com/" class="contact-a">Mail: contact@sportsxpress.com</a>
+            <br>
+            </div>
+            <div class="contactother">
+            <i class="fa fa-phone-square"></i>
+            <a href="https://web.whatsapp.com/" class="contact-a">Whatsapp: +94 71 123 4567 / +94 71 456 7891</a>
+            <br>
+            </div>
+            <div class="contactother">
+            <i class="fa fa-map-marker"></i>
+            <a href="https://www.google.com/maps" class="contact-a">Address: 50/5A, Hilevel Road, Nugegoda, Sri Lanka</a>
+            <br>
+            </div> 
+        </div>
+    
+            <br>
+            <!--Copyright-->
+            <div class="ruler">
+                <div class="copyrightdiv">
+                    <div>
+                        <p class="copyright">
+                        copyright &copy; 2022 All rights Reserved by spOrts-xpress
+                        </p>
+                    </div>
+                </div>
+            </div>
+    
+        <br>
+        <br>
+        <br>
+      <!--Editor Page Linking-->
+      <div class="button-editor">
+        <button class="editor" onclick="location.href='Editor-Page-Sewmi.html'">Edited by: Sewmi Sulakkhana</button>
+      </div>
+    </footer>
+</body>
+</html>

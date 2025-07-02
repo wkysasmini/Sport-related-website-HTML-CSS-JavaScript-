@@ -1,0 +1,461 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+
+/*Navigation Bar*/
+nav{
+  color:black !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.978);
+  padding: 10px;
+  position: sticky;
+  width: 100%;
+}
+nav li{
+  font-family: 'sans-serif',sans-serif;
+  font-size:15px;
+}
+nav ul li{
+  display: inline;
+  margin-left: 11px;
+  margin-right: 11px;
+}
+nav ul li a{
+  color:black !important;
+  padding: 10px;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  transition:0.4s ease
+}
+nav img{
+  margin-left:1%;
+  height: 70px;
+  width: auto;
+}
+nav ul li a.active {
+  color: white !important;
+  background-color: black;
+}
+
+nav ul li a:hover {
+  color: white !important;
+  background-color: black;
+}
+
+
+
+/* back to top button */
+.back-to-top a{
+  padding: 15px;
+  background-color: rgb(209, 4, 4);
+}
+.back-to-top i{
+  color: rgb(255, 251, 251);
+  cursor: pointer;
+}
+.back-to-top{
+  position: fixed;
+  bottom: 25px;
+  right: 18px;
+  z-index: 10;
+}
+.back-to-top:hover{
+  transform: scale(1.08);
+}
+
+
+
+/*Home Image 01*/
+.home01img{
+  background-image: url("Home-img-01.jpg"); 
+  /* Add the blur effect */
+  filter: blur(2px);
+  -webkit-filter: blur(3px);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+
+
+/*Home Image 01 Text*/
+.home01text{
+  background-color: rgb(0,0,0);
+  background-color: rgba(0, 0, 0, 0.596);
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 58%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+
+
+/*Text Box Image 01*/
+.boxtext{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+}
+.star{
+  color:gold;
+}
+.homeimg01-p{
+  color: #969696;
+  font-size: 16px;
+  font-weight: 400;
+}
+.homeimg01-p2{
+  color: #bababadd;
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 15px;
+}
+.homeimg01-h{
+  font-size: 50px;
+  line-height: 60px;
+  margin-top: 10px;
+  text-transform: uppercase;
+  color: white;
+}
+/* Shop Now Button*/
+.shopnow{
+  margin-top: 25px;
+  background-color: #ffff;
+  height: 60px;
+  width: 250px;
+  padding: 2px 10px;
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  transition: 0.2s ease-in-out;
+}
+.button-shopnow button {
+  color:black
+}
+.shopnow:hover{
+  background-color:#f60a0a;
+  transform: scale(1.09);
+}
+
+
+
+
+
+/*Text Area Section*/
+.textsec{
+  padding: 35px 100px; 
+}
+.text-heading{
+  display:flex;
+  font-size: 25px;
+  color: #18171b;
+  margin-top: 45px;
+  align-items: center;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.text-heading h1{
+  font-weight: 1000;
+}
+.paragraph-text{
+  display:flex;
+  padding: 25px 200px;
+  font-size: 20px;
+  color: #989898;
+  font-weight: 400;
+  align-items: center;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+}
+/*Signup Button*/
+.button-signup{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+.signup{
+  margin: 25px 0;
+  background-color: #000000;
+  height: 60px;
+  width: 250px;
+  padding: 0px 10px;
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+.button-signup button {
+  color:#ffff;
+}
+.signup:hover{
+  background-color: #f60a0a;
+  transform: scale(1.09);
+}
+
+
+
+/*Populat Sports Gallery*/
+.popsports{
+  padding: 35px 100px;
+  font-display: center;
+  font-size: 50px;
+  color: #ffffff;
+  margin-top: 45px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 1000;
+}
+div.descri {
+  padding: 5px 5px 5px 5px;
+  color:white;
+}
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+.gallerydiv:hover {
+  border: 4px solid #bbbbbb;
+}
+.image-gallery {
+  flex-basis: calc(50% - 10px);
+  margin: 25px;
+}
+.image-gallery h2 {
+  font-size: 35px;
+  color: white;
+  text-align: start;
+  text-transform: uppercase;
+  margin: 10px 0;
+}
+.image-gallery p {
+  font-size: 18px;
+  color: #a5a5a5;
+  text-align: start;
+}
+.img-gallery {
+  background-color: #18171b;
+}
+.img-gallery-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+/*Find More Button*/
+.findmore{
+  margin: 25px 0;
+  background-color: white;
+  height: 50px;
+  width: 200px;
+  padding: 0px 10px;
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+.button-findmore button {
+  color:black;
+}
+.findmore:hover{
+  background-color: #a8a8a8;
+  transform: scale(1.09);
+}
+
+
+
+/*footer starting point*/
+.container{
+  max-width: 1170px;
+  margin:auto;
+  margin-left: 15%;
+  margin-right: 5%;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-right: 20px;
+}
+ul{
+  list-style: none;
+}
+.footer{
+  margin-top:160px;
+  background-color: #24262b;
+  padding: 60px 0;
+}
+.footer-col{
+  width: 20%;
+  padding: 0 10px;
+  margin-right: 5px;
+}
+.footer-col1{
+  width: 20%;
+  padding: 0 10px;
+  margin-right: 10%;
+}
+.footer-col h4,.footer-col1 h4{
+  font-size: 20px;
+  color: #ffffff;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+.footer-col h4::before,.footer-col1 h4::before{
+  content: '';
+  position: absolute;
+  left:0;bottom: -10px;
+  background-color: #e91e63;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.footerSPXtext{
+  color: #bbbbbb;
+  text-align: justify;
+  font-size:17px;
+  width:150%;
+  margin-right: 110%;
+}
+.footer-col ul li:not(:last-child){
+  margin-bottom: 10px;
+}
+.footer-col ul li a{
+  font-size: 17px;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+  color: #ffffff;
+  padding-left: 8px;
+}
+.footer-col ul li{
+  color:white;
+  font-size: 17px;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+}
+.footer-col .social-links a{
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255,255,255,0.2);
+  margin:0 31px 5px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+} 
+.footer-col .social-links a:hover{
+  color: #24262b;
+  background-color: #ffffff;
+}
+/*Other Contacts*/
+.contact-a{
+  color: #bbbbbb;
+  font-size: 18px;
+  font-weight: 500;
+}
+.contactother{
+  margin: 5px 0;
+  color: #ffffff;
+  margin-left: 11%;
+}
+/*Copy right*/
+.ruler{
+  width: 100%;
+  height: 2px;
+  background-color:#bbbbbb;
+  margin: 35px 0 0 0;
+}
+.copyright{
+  margin: 25px 0 0 0;
+}
+.copyright{
+  color: rgb(199, 199, 199);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-display: center;
+  font-size: 13px;
+}
+.copyrightdiv{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 8%;
+}
+.copyright p{
+  margin: 0 20%;
+}
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col,.footer-col1{
+  width: 50%;
+  margin-bottom: 30px;
+  }
+}
+@media(max-width: 574px){
+  .footer-col,.footer-col1{
+    width: 100%;
+  }
+}
+
+
+
+/*Editor Button*/
+.button-editor{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+.editor{
+  margin: 25px 0;
+  background-color: #000000;
+  height: 60px;
+  width: 300px;
+  padding: 0px 10px;
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+.button-editor button {
+  color:#ffff;
+}
+.editor:hover{
+  background-color: #f72e88;
+  transform: scale(1.09);
+}

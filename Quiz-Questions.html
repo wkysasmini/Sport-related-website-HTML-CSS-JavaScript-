@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Quiz</title>
+	<link rel="stylesheet" type="text/css" href="Quiz-Questions.css">
+	<link rel="stylesheet" href="fontawesome-free-6.3.0-web/css/all.css">
+</head>
+<body>
+	<div class ="qa_box">	
+		<div class="qa_header">
+			<span>score:<span id ="score">0</span></span>
+			<span id="countdown">0</span>
+		</div>
+		<!-- Quiz questions and answers -->
+		<div class ="qa_body">
+			<div class="qa_set active">
+				<h4>1. Who won the first ICC World Cup?</h4>
+				<div class="qa_ans_row">
+					<input type="radio" name="a1">
+					<span>a. England</span>
+				</div>
+				<div class="qa_ans_row">
+					<input type="radio" name="a1" valid="valid">
+					<span>b. West Indies</span>
+				</div>
+				<div class="qa_ans_row">
+					<input type="radio" name="a1">
+					<span>c. Australia</span>
+				</div>
+				<div class="qa_ans_row">
+					<input type="radio" name="a1">
+					<span>d. India</span>
+				</div>
+			</div>
+			<div class="qa_set">
+				<h4>2. Which Country does Lionel Messi belong to?</h4>
+				<div class="qa_ans_row">
+					<input type="radio" name="a2">
+					<span>a. FC Barcelona</span>
+				</div>
+				<div class="qa_ans_row">
+					<input type="radio" name="a2">
+					<span>b. PSG</span>
+				</div>
+				<div class="qa_ans_row">
+					<input type="radio" name="a2" valid="valid">
+					<span>c. Argentina</span>
+				</div>
+				<div class="qa_ans_row">
+					<input type="radio" name="a2">
+					<span>d. Portugal</span>
+				</div>
+			</div>
+			<div class="qa_set">
+				<h4>3. Which of the following devices is used to record swimmers’ times at major competitions?</h4>
+				<div class="qa_ans_row">
+					<input type="radio" name="a3">
+					<span>a. Stop watches</span>
+				</div>
+				<div class="qa_ans_row">
+					<input type="radio" name="a3" >
+					<span>b. Touch pads</span>
+				</div>
+				<div class="qa_ans_row">
+					<input type="radio" name="a3" valid="valid" >
+					<span>c. GPS timers</span>
+				</div>
+				<div class="qa_ans_row">
+					<input type="radio" name="a3">
+					<span>d. Timer</span>
+				</div>
+			</div>
+			<div class="qa_set">
+				<h4>4. How many Umpires are there in a Cricket Match?</h4>
+				<div class="qa_ans_row">
+					<input type="radio" name="a4">
+					<span>a. 1 </span>
+				</div>
+				<div class="qa_ans_row">
+					<input type="radio" name="a4" valid="valid">
+					<span>b. 2 </span>
+				</div>
+				<div class="qa_ans_row">
+					<input type="radio" name="a4">
+					<span>c. 3 </span>
+				</div>
+				<div class="qa_ans_row">
+					<input type="radio" name="a4">
+					<span>d. 4 </span>
+				</div>
+			</div>
+			<div class="qa_set">
+				<h4>5. Which Country won the FIFA World Cup 2022?</h4>
+				<div class="qa_ans_row">
+					<input type="radio" name="a5" valid="valid">
+					<span>a. Argentina</span>
+				</div>
+				<div class="qa_ans_row">
+					<input type="radio" name="a5" >
+					<span>b. France</span>
+				</div>
+				<div class="qa_ans_row">
+					<input type="radio" name="a5">
+					<span>c. Germany</span>
+				</div>
+				<div class="qa_ans_row">
+					<input type="radio" name="a5">
+					<span>d. Spain </span>
+				</div>
+			</div>
+			<div class="qa_set">
+				<h4>6. Which of the following footballers has a world record of highest goal score for a single club?</h4>
+				<div class="qa_ans_row">
+					<input type="radio" name="a6" valid="valid">
+					<span>a. Lionel Messi (Barcelona FC)</span>
+				</div>
+				<div class="qa_ans_row">
+					<input type="radio" name="a6" >
+					<span>b. Pele (Santos FC)</span>
+				</div>
+				<div class="qa_ans_row">
+					<input type="radio" name="a6">
+					<span>c. Fernando Peyrotes (Sporting CP)</span>
+				</div>
+				<div class="qa_ans_row">
+					<input type="radio" name="a6">
+					<span>d. Gerd Muller (Bayern Munich) </span>
+				</div>
+			</div>
+			<div class="qa_set">
+				<h4>7. Name the country which is going to host ICC Cricket World Cup 2023?</h4>
+				<div class="qa_ans_row">
+					<input type="radio" name="a7">
+					<span>a. Australia</span>
+				</div>
+				<div class="qa_ans_row">
+					<input type="radio" name="a7" >
+					<span>b. England</span>
+				</div>
+				<div class="qa_ans_row">
+					<input type="radio" name="a7">
+					<span>c. South Africa</span>
+				</div>
+				<div class="qa_ans_row">
+					<input type="radio" name="a7"  valid="valid">
+					<span>d. India </span>
+				</div>
+			</div>
+			<div class="qa_set">
+				<h4>8. Which is the only style in which swimmers are face-up in the water?</h4>
+				<div class="qa_ans_row">
+					<input type="radio" name="a8">
+					<span>a. Butterfly </span>
+				</div>
+				<div class="qa_ans_row">
+					<input type="radio" name="a8" >
+					<span>b. Backstroke</span>
+				</div>
+				<div class="qa_ans_row">
+					<input type="radio" name="a8"  valid="valid">
+					<span>c. Breaststroke</span>
+				</div>
+				<div class="qa_ans_row">
+					<input type="radio" name="a8" >
+					<span>d. Freestyle </span>
+				</div>
+			</div>
+			<div class="qa_set">
+				<h4>9. What were the first tennis racket strings made of?</h4>
+				<div class="qa_ans_row">
+					<input type="radio" name="a9">
+					<span>a. Plastic</span>
+				</div>
+				<div class="qa_ans_row">
+					<input type="radio" name="a9" >
+					<span>b. Cotton</span>
+				</div>
+				<div class="qa_ans_row">
+					<input type="radio" name="a9"  valid="valid">
+					<span>c. Sheep gut</span>
+				</div>
+				<div class="qa_ans_row">
+					<input type="radio" name="a9" >
+					<span>d. Aluminum </span>
+				</div>
+			</div>
+			<div class="qa_set">
+				<h4>10. In international team races, how many swimmers are there in each team?</h4>
+				<div class="qa_ans_row">
+					<input type="radio" name="a10"  valid="valid">
+					<span>a. 4</span>
+				</div>
+				<div class="qa_ans_row">
+					<input type="radio" name="a10" >
+					<span>b. 6</span>
+				</div>
+				<div class="qa_ans_row">
+					<input type="radio" name="a10" >
+					<span>c. 8</span>
+				</div>
+				<div class="qa_ans_row">
+					<input type="radio" name="a10" >
+					<span>d. 10 </span>
+				</div>
+				
+			</div>
+		</div>
+		<!-- Quiz score -->	
+		<br>
+		<div class ="qa_set">
+		    <h4>your total score <span id="totalScore"> 0 </span> out of 100 </h4>
+		</div>
+		<div class="qa_footer">
+			<a href="Home.html" class="btn1">Stop</a>
+		</div>
+		
+	</div>
+
+    <!--Footer-->
+    <footer class="footer">
+		<div class="container">
+			<div class="row">
+	
+			<!--spOrts-xpress-->
+			<div class="footer-col1">
+				<h4>spOrts-xpress</h4>
+				<p class="footerSPXtext">Don't let time pass you by! It's never too late 
+					to make a change and commit to a healthy lifestyle. 
+					Let this new year be the catalyst for your transformation. 
+					Embark on your journey with a manageable routine and take advantage of our 
+					latest athletic gear arrivals with up to a whopping 50% discount. 
+					From basic necessities to premium performance-enhancing equipment, spOrts-xpress 
+					has everything you need to unleash your inner sportsman. 
+					Don't wait any longer, today is the day to take that first step towards a fitter, stronger you.
+				</p>
+			</div>
+	
+			<!--Sports-->
+			<div class="footer-col">
+				<h4>SPORTS</h4>
+				<ul>
+					<li><a href="Cricket.html">Cricket</a></li>
+					<li><a href="Swimming.html">Swimming</a></li>
+					<li><a href="Football.html">Football</a></li>
+					<li><a href="Tennis.html">Tennis</a></li>
+				</ul>
+			</div>
+	
+			<!--Services-->
+			<div class="footer-col">
+				<h4>SERVICES</h4>
+				<ul>
+					<li>Free Shipping</li>
+					<li>Quick Delivery</li>
+					<li>Satisfaction Guaranteed</li>
+				</ul>
+			</div>
+			
+			<!--Follow Us-->
+			<div class="footer-col">
+				<h4>FOLLOW US</h4>
+				<div class="social-links">
+					<a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+					<a href="https://twitter.com/?lang=en"><i class="fa-brands fa-square-twitter"></i></a>
+					<a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></a>
+					<a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+				</div>
+			</div>
+			</div> 
+		</div>
+	
+		<br>
+		<br>
+		<br>
+		<br>
+	
+		<div>
+			<div class="contactother">
+			<i class="fa fa-envelope"></i>
+			<a href="https://mail.google.com/" class="contact-a">Mail: contact@sportsxpress.com</a>
+			<br>
+			</div>
+			<div class="contactother">
+			<i class="fa fa-phone-square"></i>
+			<a href="https://web.whatsapp.com/" class="contact-a">Whatsapp: +94 71 123 4567 / +94 71 456 7891</a>
+			<br>
+			</div>
+			<div class="contactother">
+			<i class="fa fa-map-marker"></i>
+			<a href="https://www.google.com/maps" class="contact-a">Address: 50/5A, Hilevel Road, Nugegoda, Sri Lanka</a>
+			<br>
+			</div> 
+		</div>
+	
+			<br>
+			<!--Copyright-->
+			<div class="ruler">
+				<div class="copyrightdiv">
+					<div>
+						<p class="copyright">
+						copyright &copy; 2022 All rights Reserved by spOrts-xpress
+						</p>
+					</div>
+				</div>
+			</div>
+	
+		<br>
+		<br>
+		<br>
+	  <!--Editor Page Linking-->
+	  <div class="button-editor">
+		<button class="editor" onclick="location.href='Editor-Page-Nihinsa.html'">Edited by: Nihinsa Hesadini</button>
+	  </div>
+	</footer>
+
+	<script src="Quiz-Questions.js"></script>
+</body>
+</html>	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

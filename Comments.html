@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link css external files -->
+    <link rel="stylesheet" href="Comments.css">
+    <link rel="stylesheet" href="fontawesome-free-6.3.0-web/css/all.css">
+    <title>Comments</title>
+</head>
+
+<body>
+    <header>
+        <div id="navbar">   
+            <!-- navigation bar -->
+            <nav>
+                <!-- website logo -->
+                <a href="Home.html"><img src="SPORTS-XPRESS.png" alt="LOGO" class="logo"></a>
+                <ul>
+                    <!-- navigation bar links -->
+                    <li><a href="Home.html"><b>HOME</b></a></li>
+                    <li><a href="Gallery.html"><b>GALLERY</b></a></li>
+                    <li><a href="Buy.html"><b>BUY</b></a></li>
+                    <li><a href="Quiz.html"><b>QUIZ</b></a></li>
+                    <li><a href="SiteMap.html"><b>SITE MAP</b></a></li>
+                    <li><a href="Comments.html" class="active"><b>COMMENTS</b></a></li>
+                    <li><a href="AboutUs.html"><b>ABOUT US</b></a></li>
+                </ul>
+            </nav>
+        </div>
+      </header>
+    
+    <!-- back to top button -->
+    <div class="back-to-top"><a href="#navbar"><i class="fa fa-arrow-up"></i></a></div>
+
+    <form id="Comments-Form" action="Comments.html" method="post">
+        <fieldset>
+            <legend>COMMENT FORM</legend>
+            <br>
+            <br>
+            <div class="fill-form">
+                <div class="information">
+                    <label for="Name">Full Name:*</label>
+                    <input type="text" id="Name" name="Name">
+
+                    <br>
+                    <br>
+                
+                    <label for="Email">Email:*</label>
+                    <input type="email" id="Email" name="Email">
+
+                    <br>
+                    <br>
+                
+                    <label for="Contact" class="Phone">Contact Number:*</label>
+                    <input type="tel" id="Contact" name="Contact" pattern="[0-9]{10}">
+                </div>
+                <br>
+                <br>
+                <br>
+            
+                <label>How satisfied were you with our website today? Choose from 0-10. 
+                    Where 0 is extremely dissatisfied and 10 is extremely satisfied. *</label>
+                <br>
+                <br>
+                <br>
+                <div id="rating">
+                    <p class="num">0</p>
+                    <p class="num">1</p>
+                    <p class="num2">2</p>
+                    <p class="num3">3</p>
+                    <p class="num4">4</p> 
+                    <p class="num5">5</p> 
+                    <p class="num6">6</p>
+                    <p class="num7">7</p> 
+                    <p class="num8">8</p> 
+                    <p class="num9">9</p>
+                    <p class="num10">10</p> 
+                    <br>     
+                    <input type="radio" id="Rating0" name="rating" value="0">           
+                    <input type="radio" id="Rating1" name="rating" value="1">           
+                    <input type="radio" id="Rating2" name="rating" value="2">         
+                    <input type="radio" id="Rating3" name="rating" value="3">          
+                    <input type="radio" id="Rating4" name="rating" value="4">          
+                    <input type="radio" id="Rating5" name="rating" value="5">           
+                    <input type="radio" id="Rating6" name="rating" value="6">          
+                    <input type="radio" id="Rating7" name="rating" value="7">            
+                    <input type="radio" id="Rating8" name="rating" value="8">           
+                    <input type="radio" id="Rating9" name="rating" value="9">        
+                    <input type="radio" id="Rating10" name="rating" value="10">          
+                </div>
+            
+                <br>
+                <br>
+                <br>
+
+                
+                <label for="Reason">Please could you tell us your reason for giving this rating? *</label>
+                <br>
+                <br>
+
+                <textarea id="Reason" name="Reason" cols="122" rows="10" placeholder="type your comment..."></textarea>
+
+                <br>
+                <br>
+                <br>
+
+                <label for="Task">How did you want to complete this task today? (Optional)</label>
+                <br>
+                <br>
+                <select id="Task" name="task" class="pull-down">
+                <option value="" selected>-- Please Select --</option>
+                <option value="Phone">Phone</option>
+                <option value="Website">Website</option>
+                <option value="Webchat">Webchat</option>
+                <option value="Social Media">Social Media</option>
+                <option value="Email">Email</option>
+                </select>
+            
+                <br>
+                <br>
+                <br>
+                <br>
+
+                <label for="Task2">If you had to complete this task again, how would you prefer to do it? (Optional)</label>
+                <br>
+                <br>
+                <select id="Task2" name="task2" class="pull-down">
+                <option value="" selected>-- Please Select --</option>
+                <option value="Phone">Phone</option>
+                <option value="Website">Website</option>
+                <option value="Webchat">Webchat</option>
+                <option value="Social Media">Social Media</option>
+                <option value="Email">Email</option>
+                </select>
+
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+            </div>
+        </fieldset>
+        
+        <br>
+        <br>
+        <br>
+
+        <button type="submit" onclick="buttonClick();return false">Submit</button>
+
+        <br>
+        <br>
+        <br>
+
+      </form>
+
+    <!--Footer-->
+    <footer class="footer">
+    <div class="container">
+        <div class="row">
+
+        <!--spOrts-xpress-->
+        <div class="footer-col1">
+            <h4>spOrts-xpress</h4>
+            <p class="footerSPXtext">Don't let time pass you by! It's never too late 
+                to make a change and commit to a healthy lifestyle. 
+                Let this new year be the catalyst for your transformation. 
+                Embark on your journey with a manageable routine and take advantage of our 
+                latest athletic gear arrivals with up to a whopping 50% discount. 
+                From basic necessities to premium performance-enhancing equipment, spOrts-xpress 
+                has everything you need to unleash your inner sportsman. 
+                Don't wait any longer, today is the day to take that first step towards a fitter, stronger you.
+            </p>
+        </div>
+
+        <!--Sports-->
+        <div class="footer-col">
+            <h4>SPORTS</h4>
+            <ul>
+                <li><a href="Cricket.html">Cricket</a></li>
+                <li><a href="Swimming.html">Swimming</a></li>
+                <li><a href="Football.html">Football</a></li>
+                <li><a href="Tennis.html">Tennis</a></li>
+            </ul>
+        </div>
+
+        <!--Services-->
+        <div class="footer-col">
+            <h4>SERVICES</h4>
+            <ul>
+                <li>Free Shipping</li>
+                <li>Quick Delivery</li>
+                <li>Satisfaction Guaranteed</li>
+            </ul>
+        </div>
+        
+        <!--Follow Us-->
+        <div class="footer-col">
+            <h4>FOLLOW US</h4>
+            <div class="social-links">
+                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://twitter.com/?lang=en"><i class="fa-brands fa-square-twitter"></i></a>
+                <a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+        </div> 
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div>
+        <div class="contactother">
+        <i class="fa fa-envelope"></i>
+        <a href="https://mail.google.com/" class="contact-a">Mail: contact@sportsxpress.com</a>
+        <br>
+        </div>
+        <div class="contactother">
+        <i class="fa fa-phone-square"></i>
+        <a href="https://web.whatsapp.com/" class="contact-a">Whatsapp: +94 71 123 4567 / +94 71 456 7891</a>
+        <br>
+        </div>
+        <div class="contactother">
+        <i class="fa fa-map-marker"></i>
+        <a href="https://www.google.com/maps" class="contact-a">Address: 50/5A, Hilevel Road, Nugegoda, Sri Lanka</a>
+        <br>
+        </div> 
+    </div>
+
+        <br>
+        <!--Copyright-->
+        <div class="ruler">
+            <div class="copyrightdiv">
+                <div>
+                    <p class="copyright">
+                    copyright &copy; 2022 All rights Reserved by spOrts-xpress
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    <br>
+    <br>
+    <br>
+    <!--Editor Page Linking-->
+    <div class="button-editor">
+        <button class="editor" onclick="location.href='Editor-Page-Yehansa.html'">Edited by: Yehansa Sasmini</button>
+      </div>
+    </footer>
+    <script src="Comments.js"></script>
+</body>
+</html>

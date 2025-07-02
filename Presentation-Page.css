@@ -1,0 +1,22 @@
+body {
+  background-image: url("Presentation-Backg.gif");
+  background-size: cover;
+}
+
+h1 {
+  font-size: 6rem;
+  margin-top: 50px;
+  text-align: center;
+  font-weight: 1000;
+  color: rgb(255, 255, 255);
+  font-family: Brush Script MT;
+}
+
+#names {
+  font-size: 55px;
+  margin-top: -30px;
+  text-align: center;
+  font-weight: 1000;
+  color: rgb(255, 255, 255);
+  font-family: Comic Sans MS;
+}
